@@ -4,7 +4,7 @@ import { arrayOf, node, oneOfType } from 'prop-types';
 import TopBar from '../top-bar/TopBar';
 import SideBar from '../side-bar/SideBar';
 
-import { POSTS } from '../../../tools/general/system-variables.util';
+import { POSTS } from '../../general/system-variables.util';
 
 import styles from '../../../styles/content-container.module.scss';
 

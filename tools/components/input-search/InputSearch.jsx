@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import { arrayOf, bool, func, shape, string } from 'prop-types';
 
-import { getClassNames, isEmpty } from '../../../tools/general/helpers.util';
+import { getClassNames, isEmpty } from '../../general/helpers.util';
 
 import SVGIcon from '../icon/SVGIcon';
 

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { bool, func } from 'prop-types';
 
-import { POSTS, SEARCH_PLACEHOLDER } from '../../../tools/general/system-variables.util';
+import { POSTS, SEARCH_PLACEHOLDER } from '../../general/system-variables.util';
 
 import InputSearch from '../input-search/InputSearch';
 

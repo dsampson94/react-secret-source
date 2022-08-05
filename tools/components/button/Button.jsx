@@ -1,7 +1,7 @@
 import React from 'react';
 import { bool, func, string } from 'prop-types';
 
-import { getClassNames } from '../../../tools/general/helpers.util';
+import { getClassNames } from '../../general/helpers.util';
 import SVGIcon from '../icon/SVGIcon';
 
 const Button = ({

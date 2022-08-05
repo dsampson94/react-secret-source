@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
-import * as gtag from './components/ads/gtag';
+import * as gtag from '../tools/components/ads/gtag';
 
 import '../styles/globals.scss';
 

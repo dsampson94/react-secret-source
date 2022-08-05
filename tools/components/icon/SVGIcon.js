@@ -2,9 +2,9 @@
 import React from 'react';
 
 import { string } from 'prop-types';
-import { getClassNames } from '../../../tools/general/helpers.util';
+import { getClassNames } from '../../general/helpers.util';
 
-import useTheme from '../../../tools/hooks/useTheme';
+import useTheme from '../../hooks/useTheme';
 
 const SVGIcon = ({ name, fill, height, width, onClick, tiny, chart }) => {
 

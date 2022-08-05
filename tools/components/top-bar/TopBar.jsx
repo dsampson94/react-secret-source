@@ -2,7 +2,7 @@ import React from 'react';
 
 import { bool, func, shape } from 'prop-types';
 
-import { POSTS } from '../../../tools/general/system-variables.util';
+import { POSTS } from '../../general/system-variables.util';
 
 import styles from '../../../styles/content-container.module.scss';
 import Button from '../button/Button';
