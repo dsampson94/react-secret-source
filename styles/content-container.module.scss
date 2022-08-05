@@ -1,0 +1,33 @@
+@use "sass:map" as map;
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.contentContainerScreen {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 59px);
+  width: 100%;
+}
+
+.topBar {
+  display: flex;
+  flex-direction: row;
+  height: 10%;
+  width: 100%;
+  background-color: blue;
+}
+
+.sideBar {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid;
+  transition: 0.4s;
+  height: 100%;
+  width: 14%;
+  background-color: red;
+}
