@@ -38,12 +38,6 @@ const PostsSideBar = ({ showSideBar, mappedUserData, setShowSideBar }) => {
   return (
     <div className={ styles.sideBar }>
       { showSideBar && <>
-        <InputSearch dataToFilter={ mappedUserData }
-                     setFilteredData={ setFilteredSideBarData }
-                     persistSearchString={ persistSearchString }
-                     setPersistSearchString={ setPersistSearchString }
-                     placeholder={ SEARCH_PLACEHOLDER }
-                     sidebar />
 
         <div className="client-fields-side-bar__list">
           <div className="client-fields-side-bar__list__container">

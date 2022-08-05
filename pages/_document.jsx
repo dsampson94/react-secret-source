@@ -8,8 +8,8 @@ export default class MyDocument extends Document {
       <Html>
         <Head>
           {/* Google Adsense */ }
-          <script data-ad-client="pub-7780458585019281" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7780458585019281"
+                  crossOrigin="anonymous"></script>
           {/* Global Site Tag (gtag.js) - Google Analytics */ }
           <script async src={ `https://www.googletagmanager.com/gtag/js?id=${ GA_TRACKING_ID }` } />
           <script dangerouslySetInnerHTML={ { __html: `
