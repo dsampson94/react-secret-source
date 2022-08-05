@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { bool, func } from 'prop-types';
 
@@ -37,14 +37,7 @@ const PostsSideBar = ({ showSideBar, mappedUserData, setShowSideBar }) => {
 
   return (
     <div className={ styles.sideBar }>
-      { showSideBar && <>
 
-        <div className="client-fields-side-bar__list">
-          <div className="client-fields-side-bar__list__container">
-          </div>
-        </div>
-
-      </> }
     </div>
   );
 };
