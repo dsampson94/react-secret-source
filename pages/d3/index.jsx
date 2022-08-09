@@ -13,8 +13,9 @@ export default function PostsD3() {
   return (
     <ContentContainer view={ D3 }>
       <ArticleListContainer>
-        { useArticles()[3]?.d3?.map((article) => {
-          return <ArticleBar article={ article } />;
+        { useArticles()[3]?.d3?.map((article, index) => {
+          return <ArticleBar key={ `${ index }_${ article.title }` }
+                             article={ article } />;
         }) }
       </ArticleListContainer>
     </ContentContainer>

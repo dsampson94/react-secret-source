@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useEffect, useState } from 'react';
 import { zoomIdentity } from 'd3';
 
@@ -23,7 +24,7 @@ import { getBitconData, getDogeCoinData, getEthereumData, getUSDCData } from '..
 
 import styles from '../../styles/pages.module.scss';
 
-export default function synchronizedlinecharts() {
+export default function SynchronizedLineCharts() {
 
   const [currentGlobalZoomState, setCurrentGlobalZoomState] = useState(zoomIdentity);
   const [currentYZoomState, setCurrentYZoomState] = useState(zoomIdentity);
