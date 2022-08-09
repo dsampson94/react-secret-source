@@ -1,7 +1,9 @@
-import ContentContainer from '../tools/components/content-container/ContentContainer';
-import { POSTS } from '../tools/general/system-variables.util';
 import React, { useEffect } from 'react';
-import AdWindow from '../tools/components/ads/AdWindow';
+
+import { REACT } from '../tools/general/system-variables.util';
+
+import ContentContainer from '../tools/components/content-container/ContentContainer';
+import ArticleListContainer from '../tools/components/article-container/ArticleListContainer';
 
 export default function Home() {
 
@@ -20,13 +22,10 @@ export default function Home() {
   }, []);
 
   return (
-    <ContentContainer view={ POSTS }
-                      showClientsSideBar={ true }>
-      <div>
-        Hi there!!!
-      </div>
-      <AdWindow />
-
+    <ContentContainer view={ REACT }>
+      <ArticleListContainer>
+        Coming soon!
+      </ArticleListContainer>
     </ContentContainer>
   );
 }

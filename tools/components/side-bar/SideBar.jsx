@@ -1,26 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 import { bool, func } from 'prop-types';
 
-import { POSTS, SEARCH_PLACEHOLDER } from '../../general/system-variables.util';
-
-import InputSearch from '../input-search/InputSearch';
-
 import styles from '../../../styles/content-container.module.scss';
 
-const SideBar = ({
-                   showSideBar,
-                   setShowSideBar,
-                   mappedUserData,
-                   view
-                 }) => {
-
-  switch (view) {
-    case POSTS:
-      return <PostsSideBar showSideBar={ showSideBar }
-                           setShowSideBar={ setShowSideBar }
-                           mappedUserData={ mappedUserData } />;
-  }
+const SideBar = () => {
+  return <PostsSideBar />;
 };
 
 SideBar.propTypes = {
@@ -30,10 +15,7 @@ SideBar.propTypes = {
 
 export default SideBar;
 
-const PostsSideBar = ({ showSideBar, mappedUserData, setShowSideBar }) => {
-
-  const [filteredSideBarData, setFilteredSideBarData] = useState(undefined);
-  const [persistSearchString, setPersistSearchString] = useState('');
+const PostsSideBar = () => {
 
   return (
     <div className={ styles.sideBar }>

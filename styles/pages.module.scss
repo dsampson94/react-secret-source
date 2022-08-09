@@ -1,0 +1,37 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid wheat;
+  width: 72%;
+
+  & h1 {
+    text-align: center;
+  }
+
+  & p {
+    margin: 20px;
+  }
+}
+
+.articleList {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid wheat;
+  width: 72%;
+  height: 100vh
+}
+
+.chartContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.topCharts {
+  display: flex;
+  flex-direction: row;
+}
+
+.bottomCharts {
+  display: flex;
+  flex-direction: row;
+}

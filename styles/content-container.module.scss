@@ -1,33 +1,89 @@
-@use "sass:map" as map;
-
 .contentContainer {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  background-color: #252529;
+  color: wheat;
   width: 100%;
 }
 
 .contentContainerScreen {
   display: flex;
   flex-direction: row;
-  height: calc(100vh - 59px);
+  overflow-y: scroll;
   width: 100%;
 }
 
 .topBar {
   display: flex;
+  position: sticky;
+  background-color: #252529;
+  top: 0;
+  z-index: 2 ;
   flex-direction: row;
+  justify-content: center;
+  border-bottom: 1px solid;
   height: 10%;
   width: 100%;
-  background-color: blue;
+}
+
+.navBar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  flex-direction: row;
+  width: 100%;
+
+  & button {
+    width: 100%;
+  }
 }
 
 .sideBar {
   display: flex;
   flex-direction: column;
-  border-right: 1px solid;
+  border: 1px solid wheat;
   transition: 0.4s;
-  height: 100%;
   width: 14%;
-  background-color: red;
+}
+
+.articleBar {
+  height: 80px;
+  width: 100%;
+  margin-top: 2px;
+  border: 1px solid wheat;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #6E8192;
+    position: relative;
+    top: 0.8px;
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  white-space: nowrap;
+  color: white;
+  background-color: #53A5DF;
+  box-shadow: 1px 1px 1px #101733,
+  inset 0px 0.5px 3px #101733;
+  height: 30px;
+  width: 100%;
+  border: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 100%;
+  cursor: pointer;
+
+  &:active {
+    position: relative;
+    top: 0.8px;
+  }
+
+  &:hover {
+    background-color: #75B7E5;
+  }
 }

@@ -1,29 +1,20 @@
 import React from 'react';
+
 import { arrayOf, node, oneOfType } from 'prop-types';
 
 import TopBar from '../top-bar/TopBar';
 import SideBar from '../side-bar/SideBar';
 
-import { POSTS } from '../../general/system-variables.util';
-
 import styles from '../../../styles/content-container.module.scss';
 
 const ContentContainer = ({
-                            children,
                             view,
-                            clientRequestFields,
-                            showClientsSideBar,
-                            setShowClientsSideBar
+                            children
                           }) => {
-  switch (view) {
-    case POSTS:
-      return <PostsContentContainer showClientsSideBar={ showClientsSideBar }
-                                    setShowClientsSideBar={ setShowClientsSideBar }
-                                    clientRequestFields={ clientRequestFields }
-                                    view={ view }>
-        { children }
-      </PostsContentContainer>;
-  }
+
+  return <PostsContentContainer view={ view }>
+    { children }
+  </PostsContentContainer>;
 };
 
 ContentContainer.propTypes = {
@@ -34,24 +25,16 @@ export default ContentContainer;
 
 const PostsContentContainer = ({
                                  children,
-                                 view,
-                                 showClientsSideBar,
-                                 setShowClientsSideBar,
-                                 clientRequestFields
+                                 view
                                }) => {
 
   return (
     <div className={ styles.contentContainer }>
-      <TopBar showSideBar={ showClientsSideBar }
-              setShowSideBar={ setShowClientsSideBar }
-              clientRequestFields={ clientRequestFields }
-              view={ view } />
-
+      <TopBar view={ view } />
       <div className={ styles.contentContainerScreen }>
-        <SideBar showSideBar={ showClientsSideBar }
-                 setShowSideBar={ setShowClientsSideBar }
-                 view={ view } />
+        <SideBar view={ view } />
         { children }
+        <SideBar view={ view } />
       </div>
     </div>
   );

@@ -2,17 +2,10 @@ import React from 'react';
 
 import { bool, func, shape } from 'prop-types';
 
-import { POSTS } from '../../general/system-variables.util';
-
 import styles from '../../../styles/content-container.module.scss';
-import Button from '../button/Button';
 
-const TopBar = ({ showSideBar, setShowSideBar, clientRequestFields, view }) => {
-  switch (view) {
-    case POSTS:
-      return <PostsTopBar showSideBar={ showSideBar }
-                          setShowSideBar={ setShowSideBar } />;
-  }
+const TopBar = () => {
+  return <PostsTopBar />;
 };
 
 TopBar.propTypes = {
@@ -23,14 +16,12 @@ TopBar.propTypes = {
 
 export default TopBar;
 
-const PostsTopBar = ({ showSideBar, setShowSideBar }) => {
+const PostsTopBar = () => {
 
   return (
     <div className={ styles.topBar }>
-      <div className="field-charts-top-bar__header">
-      </div>
-      <div className="field-charts-top-bar__lower">
-      </div>
+      <h2>React Secret Sauce</h2>
+      <div></div>
     </div>
   );
 };
