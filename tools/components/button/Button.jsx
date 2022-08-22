@@ -9,10 +9,17 @@ const Button = ({
                   label,
                   onClick,
                   onMouseEnter,
+                  active,
                   disabled
                 }) => {
+
+  const getActiveButton = () => {
+    if (active) return styles.activeButton;
+    else return styles.button;
+  };
+
   return (
-    <button className={ styles.button }
+    <button className={ getActiveButton() }
             name={ name }
             type={ type }
             onClick={ onClick }

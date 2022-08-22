@@ -1,3 +1,4 @@
+/*#region synchronizedd3charts*/
 export const SynchronizedLineChartString = 'import React, { useEffect, useRef } from \'react\';\n' +
   'import { extent, max, mean, min, pointers, \n' +
   '  scaleLinear, scaleTime, select, selectAll, zoom, zoomIdentity } from \'d3\';\n' +
@@ -1194,7 +1195,7 @@ export const chartContainerString = 'import { useEffect, useState } from \'react
   '      </div>\n' +
   '    </div>\n' +
   '  );\n' +
-  '};'
+  '};';
 
 // import { useEffect, useState } from 'react';
 // import { zoomIdentity } from 'd3';
@@ -1324,4 +1325,4 @@ export const chartContainerString = 'import { useEffect, useState } from \'react
 //     </div>
 //   );
 // };
-
+/*#endregion synchronizedd3charts*/

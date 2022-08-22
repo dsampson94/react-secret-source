@@ -1,9 +1,12 @@
 import React, { useEffect } from 'react';
 
-import { REACT } from '../tools/general/system-variables.util';
+import { HOME } from '../tools/general/system-variables.util';
+
+import { useArticles } from '../tools/hooks/useArticles';
 
 import ContentContainer from '../tools/components/content-container/ContentContainer';
 import ArticleListContainer from '../tools/components/article-container/ArticleListContainer';
+import Article from '../tools/components/article/Article';
 
 export default function Home() {
 
@@ -22,9 +25,13 @@ export default function Home() {
   }, []);
 
   return (
-    <ContentContainer view={ REACT }>
-      <ArticleListContainer>
-        Coming soon!
+    <ContentContainer view={ HOME }>
+      <ArticleListContainer box>
+        { useArticles(true).map((article, index) => {
+          return <Article key={ `${ index }_${ article.title }` }
+                          article={ article }
+                          box />;
+        }) }
       </ArticleListContainer>
     </ContentContainer>
   );

@@ -10,7 +10,7 @@ export default function About() {
   return (
     <ContentContainer view={ ABOUT }>
       <ArticleListContainer>
-        Hi there!!!
+        Coming soon!
       </ArticleListContainer>
     </ContentContainer>
   );

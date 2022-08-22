@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 import { arrayOf, node, oneOfType } from 'prop-types';
 
@@ -28,14 +28,20 @@ const PostsContentContainer = ({
                                  view
                                }) => {
 
+  const end = useRef(null);
+
   return (
     <div className={ styles.contentContainer }>
-      <TopBar view={ view } />
+      <TopBar view={ view }
+              end={ end } />
+
       <div className={ styles.contentContainerScreen }>
         <SideBar view={ view } />
         { children }
         <SideBar view={ view } />
       </div>
+
+      <div ref={ end } />
     </div>
   );
 };

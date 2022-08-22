@@ -24,33 +24,33 @@ const NavBar = ({
   const router = useRouter();
 
   return (
-    <div className={ styles.navBar }>
+    <nav className={ styles.navBar }>
 
       <Button label={ HOME }
               onClick={ () => router.replace('/') }
-              white={ !router.pathname.includes('Home') } />
+              active={ router.pathname === '/' } />
 
       <Button label={ REACT }
               onClick={ () => router.replace('/react') }
-              white={ !router.pathname.includes('React') } />
+              active={ router.pathname.includes('react') } />
 
       <Button label={ REACT_NATIVE }
               onClick={ () => router.replace('/native') }
-              white={ !router.pathname.includes('Native') } />
+              active={ router.pathname.includes('native') } />
 
       <Button label={ NEXT }
               onClick={ () => router.replace('/next') }
-              white={ !router.pathname.includes('Next') } />
+              active={ router.pathname.includes('next') } />
 
       <Button label={ D3 }
               onClick={ () => router.replace('/d3') }
-              white={ !router.pathname.includes('D3') } />
+              active={ router.pathname.includes('d3') } />
 
       <Button label={ ABOUT }
               onClick={ () => router.replace('/about') }
-              white={ !router.pathname.includes('About') } />
+              active={ router.pathname.includes('about') } />
 
-    </div>
+    </nav>
   );
 };
 

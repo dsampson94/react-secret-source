@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
+import Head from 'next/head';
+
 import * as gtag from '../tools/components/ads/gtag';
 
 import '../styles/globals.scss';
@@ -14,7 +16,12 @@ function MyApp({ Component, pageProps }) {
     return () => router.events.off('routeChangeComplete', handleRouteChange);
   }, [router.events]);
 
-  return <Component { ...pageProps } />;
+  return <>
+    <Head>
+      <title>{ 'React Secret Sauce' }</title>
+    </Head>
+    <Component { ...pageProps } />
+  </>;
 }
 
 export default MyApp;

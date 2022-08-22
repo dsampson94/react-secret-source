@@ -177,7 +177,7 @@ const SynchronizedLineChart = ({
 
 export default SynchronizedLineChart;
 
-const ChartHeader = ({ chartName, isDarkMode }) => {
+const ChartHeader = ({ chartName }) => {
 
   switch (chartName) {
     case BTC :
