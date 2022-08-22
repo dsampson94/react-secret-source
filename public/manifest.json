@@ -1,15 +1,17 @@
 {
   "short_name": "RSS",
   "name": "React Secret Sauce",
+  "default_locale": "en",
+  "description": "Code repository/blog about Javascript, React.js, d3.js, React Native and Next.js, sharing tutorials, code and insights from the mind of David Sampson (ZA).",
   "icons": [
     {
       "src": "favicon.png",
-      "sizes": "16x16",
+      "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/png"
     }
   ],
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#252529"
 }
