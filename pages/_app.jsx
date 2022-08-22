@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
 
   return <>
     <Head>
-      <title>{ 'React Secret Sauce' }</title>
+      <title>{ 'React Secret Source' }</title>
     </Head>
     <Component { ...pageProps } />
   </>;
