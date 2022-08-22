@@ -4,6 +4,10 @@
   border: 1px solid wheat;
   width: 72%;
 
+  @media only screen and (max-device-width: 480px) {
+    width: 100%;
+  }
+
   & h1 {
     text-align: center;
   }
@@ -20,6 +24,10 @@
   border: 1px solid wheat;
   width: 72%;
   height: 100vh;
+
+  @media only screen and (max-device-width: 480px) {
+    width: 100%;
+  }
 
   > h3 {
     text-align: center;
@@ -41,16 +49,28 @@
 .chartContainer {
   display: flex;
   flex-direction: column;
+
+  @media only screen and (max-device-width: 480px) {
+    padding: 0 30px 0 30px;
+  }
 }
 
 .topCharts {
   display: flex;
   flex-direction: row;
+
+  @media only screen and (max-device-width: 480px) {
+    flex-direction: column;
+  }
 }
 
 .bottomCharts {
   display: flex;
   flex-direction: row;
+
+  @media only screen and (max-device-width: 480px) {
+    display: none;
+  }
 }
 
 .tableContainer {
@@ -92,7 +112,18 @@
         padding: 0 5px 0 10px;
         color: white;
         border: 2px solid #53A5DF;
+
+        @media only screen and (max-device-width: 480px) {
+          font-size: 10px;
+        }
       }
     }
+  }
+}
+
+.codeContainer {
+
+  @media only screen and (max-device-width: 480px) {
+    padding: 0 15px 0 15px;
   }
 }

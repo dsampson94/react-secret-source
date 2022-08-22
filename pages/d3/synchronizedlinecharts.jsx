@@ -73,13 +73,11 @@ export default function SynchronizedLineCharts() {
                       height={ '1000px' } />
 
           <p>
-            SynchronizedLineChart.js is a clusterfuck at first glance, If you dont understand whats going on here, I would recommend looking
+            SynchronizedLineChart.js can be confusing at first glance, If you dont understand whats going on here, I would recommend looking
             up each D3 method with the <a href="https://github.com/d3/d3/blob/main/API.md"
                                           style={ { color: 'lightblue', textDecoration: 'underline' } }>docs</a>. There is also the
-            useDimensions.js
-            hook which is used for responsive resizing, scroll the browser zoom and you'll see it in action. I'll credit Swizec Teller for
-            sharing this one, thank you!
-          </p>
+            useDimensions.js hook which is used for responsive resizing, scroll the browser zoom and you'll see it in action.
+            I'll credit Swizec Teller for sharing this one, thank you!</p>
 
           <p>
             What is important here is how much better this reads to it's JSX-free counterpart. By componentizing our D3 code

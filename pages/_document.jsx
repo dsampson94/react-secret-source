@@ -12,7 +12,6 @@ export default class MyDocument extends Document {
           <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
           <meta name="description" content="Code repository/blog about Javascript, React.js, d3.js, React Native and
                  Next.js, sharing tutorials, code and insights from the mind of David Sampson (ZA)." />
-          <title>React Secret Source</title>
           {/* Google Adsense */ }
           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7780458585019281"
                   crossOrigin="anonymous"></script>

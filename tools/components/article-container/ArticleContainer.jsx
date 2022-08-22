@@ -1,5 +1,6 @@
-import styles from '../../../styles/pages.module.scss';
 import NavBar from '../nav-bar/Navbar';
+
+import styles from '../../../styles/pages.module.scss';
 
 const ArticleContainer = ({ children }) => {
 

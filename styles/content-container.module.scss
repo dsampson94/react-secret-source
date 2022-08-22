@@ -44,10 +44,22 @@
   z-index: 2;
   top: 0;
   flex-direction: row;
-  width: 100%;
+  width: 99.7%;
 
   & button {
     width: 100%;
+  }
+
+  & label {
+    @media only screen and (max-device-width: 480px) {
+      font-weight: bold;
+      font-size: 8px;
+    }
+
+    @media only screen and (max-device-width: 800px) {
+      font-weight: bold;
+      font-size: 8px;
+    }
   }
 }
 
@@ -57,6 +69,11 @@
   border: 1px solid wheat;
   transition: 0.4s;
   width: 14%;
+
+  @media only screen and (max-device-width: 480px) {
+    width: 0;
+    border: none;
+  }
 }
 
 .articleBar {
@@ -84,6 +101,11 @@
   border: 1px solid wheat;
   cursor: pointer;
 
+  @media only screen and (max-device-width: 480px) {
+    min-width: 40%;
+    height: 180px;
+  }
+
   > h1 {
     background-color: #252529;
     padding: 10px;
@@ -109,9 +131,8 @@
   height: 30px;
   width: 100%;
   border: 0;
-  padding: 0;
+  padding: 3px;
   font-family: inherit;
-  font-size: 100%;
   cursor: pointer;
 
   &:active {
@@ -137,9 +158,8 @@
   height: 30px;
   width: 100%;
   border: 0;
-  padding: 0;
+  padding: 3px;
   font-family: inherit;
-  font-size: 100%;
   cursor: pointer;
 
   &:active {

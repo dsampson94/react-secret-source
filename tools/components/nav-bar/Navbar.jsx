@@ -9,17 +9,7 @@ import Button from '../button/Button';
 
 import styles from '../../../styles/content-container.module.scss';
 
-const NavBar = ({
-                  activePath,
-                  handlePostsClick,
-                  handleMonitorProbesClick,
-                  handleFindLastRecordingsClick,
-                  handleAssistantClick,
-                  handleNeglectedClick,
-                  handleEmailReadingsClick,
-                  handleChartClick,
-                  handleIrricomsClick
-                }) => {
+const NavBar = ({}) => {
 
   const router = useRouter();
 

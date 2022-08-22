@@ -1,7 +1,9 @@
 import { useEffect } from 'react';
 import Prism from 'prismjs';
 
-const CodeViewer = ({ codeString }) => {
+import styles from '../../../styles/pages.module.scss';
+
+const CodeViewer = ({ codeString, height }) => {
 
   useEffect(() => {
     if (typeof window !== 'undefined')
@@ -9,16 +11,18 @@ const CodeViewer = ({ codeString }) => {
   }, []);
 
   return (
+    <div className={ styles.codeContainer }>
     <pre style={ {
       height: '600px',
-      width: '96%',
+      width: '95.5%',
       borderRadius: '30px',
       marginLeft: '2%',
       boxShadow: '0px 0px 3px rgba(160, 210, 200, 0.90)'
     } }>
       <code className={ `language-javascript` }>{ codeString }</code>
     </pre>
-  );d
+    </div>
+  );
 };
 
 export default CodeViewer;
