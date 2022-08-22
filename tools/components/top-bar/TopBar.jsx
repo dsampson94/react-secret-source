@@ -22,7 +22,7 @@ const PostsTopBar = ({ end }) => {
     <div className={ styles.topBar }
          onClick={ () => setScrolledToTop(!scrolledToTop) }>
       <div className={ styles.topBarImage }>
-        <Image src={ '/../public/logo.png' }
+        <Image src={ '/logo.png' }
                alt={ 'rss logo' }
                height={ 20 }
                width={ 65 } />

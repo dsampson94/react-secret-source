@@ -96,7 +96,7 @@ const Column = ({ dataIndex, value, image, link }) => {
   if (image)
     return <td style={ { width: '10px', padding: '5px' } }
                key={ dataIndex + value }>
-      <Image src={ `/../public/${ value }` }
+      <Image src={ `/${ value }` }
              alt={ 'mastery icon' }
              height={ 50 }
              width={ 45 } />
